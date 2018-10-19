@@ -1,0 +1,6 @@
+framework module Pods_TableViewGallery {
+  umbrella header "Pods-TableViewGallery-umbrella.h"
+
+  export *
+  module * { export * }
+}

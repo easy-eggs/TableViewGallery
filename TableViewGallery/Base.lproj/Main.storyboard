@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,82 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TableViewGallery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sor-RL-quf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" rowHeight="120" id="8CQ-rb-bQz" userLabel="ImageCell" customClass="ImageCell" customModule="TableViewGallery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8CQ-rb-bQz" id="hZg-Vy-Wgg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1dU-Vc-BDX">
+                                                    <rect key="frame" x="16" y="8" width="343" height="103.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hxd-XM-3a3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="103.5"/>
+                                                        </imageView>
+                                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ODb-jd-2at">
+                                                            <rect key="frame" x="161" y="41" width="20" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="bfV-jG-uSm"/>
+                                                                <constraint firstAttribute="width" constant="20" id="f59-a7-g1x"/>
+                                                            </constraints>
+                                                        </activityIndicatorView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="ODb-jd-2at" firstAttribute="leading" secondItem="1dU-Vc-BDX" secondAttribute="leading" constant="161" id="4lN-Yx-hds"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ODb-jd-2at" secondAttribute="bottom" constant="42.5" id="M5J-wg-A52"/>
+                                                        <constraint firstItem="ODb-jd-2at" firstAttribute="top" secondItem="1dU-Vc-BDX" secondAttribute="top" constant="41" id="Np6-oR-epa"/>
+                                                        <constraint firstItem="Hxd-XM-3a3" firstAttribute="leading" secondItem="1dU-Vc-BDX" secondAttribute="leading" id="coS-aj-vcb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Hxd-XM-3a3" secondAttribute="trailing" id="k3r-QA-1sh"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Hxd-XM-3a3" secondAttribute="bottom" id="mrg-NU-kL0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ODb-jd-2at" secondAttribute="trailing" constant="162" id="nDZ-R5-lVP"/>
+                                                        <constraint firstItem="Hxd-XM-3a3" firstAttribute="top" secondItem="1dU-Vc-BDX" secondAttribute="top" id="ng1-hv-Y2t"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="1dU-Vc-BDX" secondAttribute="trailing" constant="16" id="Cqh-ve-3Eq"/>
+                                                <constraint firstItem="1dU-Vc-BDX" firstAttribute="leading" secondItem="hZg-Vy-Wgg" secondAttribute="leading" constant="16" id="OH0-C2-MfC"/>
+                                                <constraint firstAttribute="bottom" secondItem="1dU-Vc-BDX" secondAttribute="bottom" constant="8" id="S9a-76-cDn"/>
+                                                <constraint firstItem="1dU-Vc-BDX" firstAttribute="top" secondItem="hZg-Vy-Wgg" secondAttribute="top" constant="8" id="m7Z-Z5-Hwp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="_image" destination="Hxd-XM-3a3" id="d57-Bw-OQU"/>
+                                            <outlet property="activityIndicator" destination="ODb-jd-2at" id="ytc-no-vOl"/>
+                                            <outlet property="backView" destination="1dU-Vc-BDX" id="ekM-jP-F36"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sor-RL-quf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zqf-dA-gzp"/>
+                            <constraint firstItem="sor-RL-quf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eh1-dy-65B"/>
+                            <constraint firstItem="sor-RL-quf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kP8-fv-eNm"/>
+                            <constraint firstItem="sor-RL-quf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xBI-JS-u69"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="sor-RL-quf" id="NVZ-he-qZj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
