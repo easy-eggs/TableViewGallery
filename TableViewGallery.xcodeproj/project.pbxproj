@@ -14,7 +14,7 @@
 		0B4DC09A2179A1D800EF8A1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4DC0982179A1D800EF8A1A /* LaunchScreen.storyboard */; };
 		0B4DC0A52179A72300EF8A1A /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DC0A42179A72300EF8A1A /* ImageCell.swift */; };
 		0B4DC0A72179BC1F00EF8A1A /* dataJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B4DC0A62179BC1E00EF8A1A /* dataJson.json */; };
-		0B4DC0A92179C7F800EF8A1A /* ImageCacheLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DC0A82179C7F800EF8A1A /* ImageCacheLoader.swift */; };
+		0B5EABB3217B744A00DC40E4 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5EABB2217B744A00DC40E4 /* Connectivity.swift */; };
 		D64060A64366BCDFE60001CA /* Pods_TableViewGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED8A974400259F22669583F /* Pods_TableViewGallery.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		0B4DC09B2179A1D800EF8A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B4DC0A42179A72300EF8A1A /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		0B4DC0A62179BC1E00EF8A1A /* dataJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dataJson.json; sourceTree = "<group>"; };
-		0B4DC0A82179C7F800EF8A1A /* ImageCacheLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheLoader.swift; sourceTree = "<group>"; };
+		0B5EABB2217B744A00DC40E4 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		40AA093356A923758C8E429C /* Pods-TableViewGallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewGallery.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewGallery/Pods-TableViewGallery.release.xcconfig"; sourceTree = "<group>"; };
 		5444301BE3B234DFC56D9982 /* Pods-TableViewGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewGallery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewGallery/Pods-TableViewGallery.debug.xcconfig"; sourceTree = "<group>"; };
 		EED8A974400259F22669583F /* Pods_TableViewGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,7 +75,7 @@
 				0B4DC0982179A1D800EF8A1A /* LaunchScreen.storyboard */,
 				0B4DC09B2179A1D800EF8A1A /* Info.plist */,
 				0B4DC0A42179A72300EF8A1A /* ImageCell.swift */,
-				0B4DC0A82179C7F800EF8A1A /* ImageCacheLoader.swift */,
+				0B5EABB2217B744A00DC40E4 /* Connectivity.swift */,
 			);
 			path = TableViewGallery;
 			sourceTree = "<group>";
@@ -220,10 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B5EABB3217B744A00DC40E4 /* Connectivity.swift in Sources */,
 				0B4DC0922179A1CE00EF8A1A /* ViewController.swift in Sources */,
 				0B4DC0902179A1CE00EF8A1A /* AppDelegate.swift in Sources */,
 				0B4DC0A52179A72300EF8A1A /* ImageCell.swift in Sources */,
-				0B4DC0A92179C7F800EF8A1A /* ImageCacheLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
